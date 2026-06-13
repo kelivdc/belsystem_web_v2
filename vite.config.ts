@@ -8,6 +8,9 @@ import tailwindcss from '@tailwindcss/vite'
 
 const config = defineConfig({
   resolve: { tsconfigPaths: true },
+  server: {
+    allowedHosts: ['belsystem.id'],
+  },
   plugins: [devtools(), tailwindcss(), tanstackStart(), viteReact()],
 })
 
