@@ -5,12 +5,12 @@
   "imports": {
     "#/*": "./src/*"
   },
-  "scripts": {
+   "scripts": {
     "dev": "vite dev --port 3000",
-    "generate-routes": "tsr generate",
-    "build": "vite build",
+    "build": "/root/.bun/bin/bun --bun vite build",
     "preview": "vite preview",
-    "test": "vitest run"
+    "test": "vitest run",
+    "start": "/root/.bun/bin/bun run .output/server/index.mjs"
   },
   "dependencies": {
     "@radix-ui/react-separator": "^1.1.9",
